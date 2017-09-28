@@ -1,5 +1,6 @@
 apply plugin: "java"
 apply plugin: "maven"
+apply plugin: "jacoco"
 
 group = "myorg"
 version = 1.0
@@ -35,12 +36,31 @@ dependencies {
     testCompile sourceSets.impl.output
     runtime configurations.apiRuntime
     runtime configurations.implRuntime
+    
+    // https://mvnrepository.com/artifact/org.mockito/mockito-all
+	testCompile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
 }
 
 jar {
     from sourceSets.api.output
     from sourceSets.impl.output
 }
+
+task mitarea <<{
+	System.out.println("hhhhhhhhhhhhh");
+
+}
+
+test{
+jacoco{
+   	append = false
+   	destinationFile = file("jacoco/jacocoTest.exec")
+   
+   }
+   reports.junitXml.destination = file("jacoco/test-results")
+}
+
+jacocoTestReport.dependsOn(test)
 
 uploadArchives {
     repositories {

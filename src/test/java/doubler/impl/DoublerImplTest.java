@@ -9,5 +9,15 @@ public class DoublerImplTest {
     public void testIt() {
         Doubler doubler = new DoublerImpl();
         assert doubler.doubleIt(2) == 4;
+        System.out.println("hhhhhhhhhhhhh");
     }
+    
+    @Test
+    public void pruebaCarlos() {
+        Doubler doubler = new DoublerImpl();
+        assert doubler.doubleIt(2) == 4;
+        System.out.println("hhhhhhhhhhhhh");
+    }
+    
+    
 }
