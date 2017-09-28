@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="doubler.impl.DoublerImplTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-09-28T19:24:02" hostname="CARLOSP-LOPEZ" time="0.017">
+  <properties/>
+  <testcase name="pruebaCarlos" classname="doubler.impl.DoublerImplTest" time="0.017"/>
+  <testcase name="testIt" classname="doubler.impl.DoublerImplTest" time="0.0"/>
+  <system-out><![CDATA[hhhhhhhhhhhhh
+hhhhhhhhhhhhh
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
